@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NepalTravel</title>
+	<meta name="author" content="Devraj Tamang">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+	        
+		ul {
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+		  
+		  position:fixed;
+		  top:0%;
+		  left:0%;
+		  width:100%; 
+		  list-style-type:none;    		  
+        }
+		ol{
+		   font-color:white-space;
+		}
+
+        li {
+          float: left;
+        }
+
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+		  text-decoration:none;
+        }
+
+        li a:hover {
+           background-color: #111;
+		   text-decoration:underline;
+        }
+			
+	   .logo {
+          position: absolute;
+          top: 0;
+          left: 10%;
+        }
+	
+	   .row {
+        display: flex;
+		<!-- background-image: url('nepal1.jpg');
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+		opacity: 0.8; -->
+        }
+
+       .col {
+         flex: 33%;
+         padding: 5px;
+       }
+	   table{
+	      background-image: url('nepal1.jpg');
+		  background-size: 100%;
+		  font-family: "Gill Sans", sans-serif;
+	   }
+	   
+	   th, td {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 40px;
+       }
+	   
+	   
+	   input[type="submit"] {
+          background-color: blue;
+          border: none;
+          color: white;
+          font-size: 16px;
+          padding: 8px 16px;
+          border-radius: 4px;
+        }
+
+       input[type="submit"]:hover {
+          background-color: darkblue;
+        }
+		
+		label {
+        display: none;
+       }
+
+       input:checked + label {
+        display: block;
+       }
+	   
+	   .hide {
+        display: none;
+       }
+    
+      .myDIV:hover + .hide {
+        display: block;
+        color: red;
+      }
+	  fieldset, .nepalmap {
+         display: inline-block;
+       }
+	   
+	   .om:hover + .hide{
+	      opacity: 0.5;
+		  display: block;
+		  color:red;
+	   }
+	   
+	    .fa {
+			  padding:10px;
+			  font-size:10px;
+			  width:10px;
+			  text-align:center;
+			  text-decoration:none;
+			  margin:5px 2px;
+			}
+			
+			.fa:hover{
+			  opacity: 0.7;
+			}
+		    
+			.fa-facebook {
+			  background: #3B5998;
+			  color: white;
+			}
+			
+			.fa-instagram {
+			  background: #992600;
+			  color: white;
+			}
+			
+			.fa-whatsapp {
+			  background: #009933;
+			  color: white;
+			}
+			
+			.dropdown {
+            position: relative;
+            display: inline-block;
+            }
+
+            .dropdown-content {
+             display: none;
+             position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+           }
+
+           .dropdown:hover .dropdown-content {
+           display: block;
+           }
+			
+			
+		#introvideo{
+		     <!--  min-height: 200px;
+			  max-height: 400px;
+			  min-width: 400px;
+			  max-width: 600px; -->
+			  
+			   min-height: 50%;
+			  max-height: 70%;
+			  min-width: 50%;
+			  max-width: 100%;
+		}
+	  
+	   #myFieldset {
+		  border: 2px solid #333;
+		  background-color: #f5f5f5;
+		  padding: 10px;
+		  margin: 20px;
+		  width: 40%;
+		}
+		
+		 #myFieldset legend{
+		  border: 2px solid #333;
+		  padding: 10px;
+		  margin: 20px;
+		  width: 40%;
+		}
+		
+         
+
+	    
+	</style>
+	
+  </head>
+  <body>
+   
+   
+  <div id="top"></div>
+   <br><br><br>
+	<a href="#bottom">Go to Bottom</a>
+    <header>
+     <div class="giflogo">
+	  <a href="https://www.animatedimages.org/cat-nepal-flag-839.htm"><img src="https://www.animatedimages.org/data/media/839/animated-nepal-flag-image-0007.gif" border="0" alt="animated-nepal-flag-image-0007" /></a>
+	  
+	   <!-- <div class="logo"> -->
+			<img src="logo1.png"  alt="Website travel logo" width="650" height="150" />
+       </div>
+    </header>  
+	
+	
+
+ <div class="menu"> 
+      <nav>
+        <ul>
+		   <li><a href="index.html">Home</a></li>
+		   
+		  <li><a href="destination.html">Destinations</a>
+		  
+		          <select id="menu" name="menu" onchange="location = this.value;">  
+					
+					<option value="destination.html">Muktinath</option>
+                    <option value="destination.html">Pokhara</option>
+                    <option value="destination.html">Chitwan</option>
+					<option value="destination.html">Langtang National Park</option>
+                    <option value="destination.html">Gosaikunda</option>
+                    <option value="destination.html">Annapurna Base Camp</option>
+                </select>
+		  
+		  </li>
+		  
+		  
+		  
+		  <li><a href="travelpackage.html">Travel Package</a>
+		     <!--  <ol>
+			          <li><a href="#">3Days</a></li>
+                      <li><a href="#">5Days</a></li>
+                      <li><a href="#">A week</a></li>
+			  </ol> -->
+			 
+		  
+		  </li>
+          <li><a href="#travel-tips">Travel Tips</a></li>
+		 <!--  <li><a href="#climate">Climate</a></li> -->
+		  <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+		 
+        </ul>
+      </nav>
+	 </div>	
+		 
+	    <table>
+               
+            <tr>
+                <th><p style="text-align: justify;  font-family: Trebuchet MS;"  >Nepal is a place of exquisite and varied natural scenery, as well as distinctive communities. Bengal tigers, one-horned rhinoceroses, Asiatic elephants, red pandas, snow leopards, and Tibetan wolves live in the breathtaking Himalayas, tropical rainforests, and plains of the Terai. Nepal is well-known for its safaris, rafting, mountaineering, and trekking. An ethnic mosaic with delectable cuisine, distinctive cultural customs, and vibrant celebrations. Nepal, which is mostly Hindu and Buddhist, is a tolerant melting pot of many cultures and religious beliefs, with over 100 recognized castes and ethnic groups, speaking as many languages, and where spirituality and everyday life are entwined. Only the Kathmandu Valley has 7 UNESCO World Heritage Sites. <br>
+				       <img src="abc2.jpg"  style="width:100%" height="250">
+				     </p></td>
+                <th><p style="text-align: justify;  font-family: Trebuchet MS;">There are many different types of accommodations available, but we only utilize and suggest award-winning hotels, most of which fall into the five-star level. It is highly advised that you book every piece of lodging as long in advance as you can, especially if you want to visit during their festival season.
+
+                        A great family-friendly vacation spot, Nepal offers a variety of kid-friendly activities including custom wildlife safaris, rafting, nature walks, and cultural tours. <br> 
+				 <iframe src="https://www.daraz.com" width="400" height="90"><p> </iframe> <br><br><br>	
+						Another one of the world's poorest nations is Nepal. The World Food Program estimates that 25% of Nepal's population still subsists on less than 50 cents a day due to its landlocked location, economic underachievement, and unstable political climate. Children are the most at risk group in the population and may be subjected to trafficking, forced labor, and slavery. They also suffer high infant mortality rates, underage marriages, inadequate water sanitation, insufficient access to food, and low educational opportunities.According to the Nepali Central Child Welfare Board, the earthquake left thousands of other children "extremely vulnerable" and about 1,400 children orphaned.
+
+                       In Nepal, there are still a lot of underprivileged kids, and often, bright young people lack the funding or opportunities to further their education and improve their life. However, there is also a lot of promise, possibility, and kids who have goals and desires that they can achieve with the right support.<p></td>
+            </tr>    
+        </table><br>
+		
+		<!-- <div class="om">
+	      
+	     <img src="nepal1.jpg"  width=100% height="605">
+	  </div> -->
+		
+</div>
+			
+			
+			
+			
+		<video id="introvideo" muted autoplay loop>
+              <source src="intro.mp4" type="video/mp4" width="20" height="20">
+        </video>
+	
+			
+			<!-- <center>
+			<div class="googlemap">
+		       <iframe src="https://maps.google.com/maps?q=your+location&output=embed" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		     </div>
+			</center> -->
+		
+	<div class="nepalmap">
+		   
+		       <iframe src="https://maps.google.com/maps?q=your+location&output=embed" width="800" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+			   <h2 style="box-shadow: 0 0 10px #000; ">Use google maps to look for a location<h2>
+		   
+    </div>	
+		
+		
+		
+		
+    <fieldset id="myFieldset">
+	  <legend> <b> Sign up and stay connected! </b> </legend>
+	
+	
+	  <form action="/action_page.php">
+	    <p> Email*</br> <input type="text" placeholder="Type Email Address" name="email" size="50" required /> </p>
+	    <p> Full name*</br> <input type="text" placeholder="Type organization name" name="org" size="50" required /> </p>
+	    <!-- <p> Suggestion</br> <input type="text" placeholder="Suggest me.." name="suggest"/> </p> -->
+        <p>How did you know about us? </br><textarea id="query" name="query"  rows="5" cols="70" placeholder="Optional,, 150 words max." maxlength="150" autofocus></textarea><br>	</p>  
+	     <p>Upload your Passport size photo*</p>
+         <input type="file" id="photo" name="photo" required><br>
+		<p> Today's date* </br>
+		<input type="date" name="date" autofocus required /> </p>
+	    <input type="submit" value="submit" autofocus> 
+	  </form>
+	</fieldset>
+		
+		
+		
+		
+		
+		
+	
+	
+	
+	
+	
+	
+  
+    <footer>
+      
+	  <center> 
+	       <address>
+	             <p>Copyright &copy 2023 DevrajTamang</p>
+	              Backpackers: a group project<br> 				  
+				  			
+					<a href="https://www.facebook.com/devrajt74" class="fa fa-facebook"></a>
+					<a href="https://www.instagram.com/devraj07tamang/" class="fa fa-instagram"></a>
+					<a href="tel:+819068311797" class="fa fa-whatsapp" ></a> </p>
+	       </address>
+    </center>
+	
+	
+    </footer> 
+     
+	 <a href="#top">Go to Top</a>
+    <div id="bottom"></div>
+	
+	
+	
+	
+	
+	
+	<!-- <ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Contacts</a></li>
+</ul>  -->
+
+<!-- li {
+  display: inline;
+}
+a {
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 1%;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 31%;
+  color: white;
+  background-color: green;
+}
+a:hover {
+  background: blue;
+} 
+
+We set the display property to inline for list items to make them sit on the same line with the others, acting as inline elements. -->
+	
+	
+
+	
+	
+	
+  </body>
+</html>

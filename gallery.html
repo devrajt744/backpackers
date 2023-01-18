@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NepalTravel</title>
+	<meta name="author" content="Devraj Tamang">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style>
+	
+	    .row {
+			font-size: 18px;
+			text-align: center;
+			font-weight: bold;
+			line-height: 1.5;
+			text-decoration: none;
+			background-color: #c0c0c0;
+			border: 1px solid black;
+			padding: 10px;
+			margin: 20px;
+			width: 100%;
+			height: auto;
+			font-family: "Gill Sans", sans-serif;
+		}
+	        
+		img {
+				width: 250px;
+				height: 300px;
+				border-radius: 20%;
+				object-fit: cover;
+		}	
+			
+		ul {
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+		  
+		  position:fixed;
+		  top:0%;
+		  left:0%;
+		  width:100%; 
+		  list-style-type:none;    		  
+        }
+		ol{
+		   font-color:white-space;
+		}
+
+        li {
+          float: left;
+        }
+
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+		  text-decoration:none;
+        }
+
+        li a:hover {
+           background-color: #111;
+		   text-decoration:underline;
+        }
+			
+	   .logo {
+          position: absolute;
+          top: 0;
+          left: 10%;
+        }
+	
+	  <!--  .row {
+        display: flex; -->
+		<!-- background-image: url('nepal1.jpg');
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+		opacity: 0.8; -->
+        <!-- } -->
+
+       .col {
+         flex: 33%;
+         padding: 5px;
+       }
+	   table{
+	      background-image: url('nepal1.jpg');
+		   background-size: 100%;
+	   }
+	   
+	   th, td {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 40px;
+       }
+	   
+	   
+	   input[type="submit"] {
+          background-color: blue;
+          border: none;
+          color: white;
+          font-size: 16px;
+          padding: 8px 16px;
+          border-radius: 4px;
+        }
+
+       input[type="submit"]:hover {
+          background-color: darkblue;
+        }
+		
+		label {
+        display: none;
+       }
+
+       input:checked + label {
+        display: block;
+       }
+	   
+	   .hide {
+        display: none;
+       }
+    
+      .myDIV:hover + .hide {
+        display: block;
+        color: red;
+      }
+	  fieldset, .nepalmap {
+         display: inline-block;
+       }
+	   
+	 <!--   .om:hover + .hide{
+	      opacity: 0.5;
+		  display: block;
+		  color:red;
+	   } -->
+	   
+	    .fa {
+			  padding:10px;
+			  font-size:10px;
+			  width:10px;
+			  text-align:center;
+			  text-decoration:none;
+			  margin:5px 2px;
+			}
+			
+			.fa:hover{
+			  opacity: 0.7;
+			}
+		    
+			.fa-facebook {
+			  background: #3B5998;
+			  color: white;
+			}
+			
+			.fa-instagram {
+			  background: #992600;
+			  color: white;
+			}
+			
+			.fa-whatsapp {
+			  background: #009933;
+			  color: white;
+			}
+	        
+			.hide {
+               display: none;
+            }
+    
+            <!-- .myDIV:hover + .hide {
+             display: block;
+             color: red;
+            } -->
+			
+			 .col:hover + .hide {
+             display: block;
+             color: black;
+			 text-align: justify;
+			 text-decoration:none;
+            }
+				   
+	    
+	</style>
+	
+  </head>
+  <body>
+   
+    <br><br><br>
+  
+   <!--  <header>
+     <div class="giflogo">
+	  <a href="https://www.animatedimages.org/cat-nepal-flag-839.htm"><img src="https://www.animatedimages.org/data/media/839/animated-nepal-flag-image-0007.gif" border="0" alt="animated-nepal-flag-image-0007" /></a>
+	  
+	   
+			<img src="logo.png"  alt="Website travel logo" width="950" height="150" />
+       </div>
+    </header>   -->
+
+ <div class="menu"> 
+      <nav>
+        <ul>
+		   <li><a href="index.html">Home</a></li>
+		   
+		  <li><a href="destination.html">Destinations</a>
+		  
+		          <select id="menu" name="menu" onchange="location = this.value;">  
+					
+					<option value="destination.html">Muktinath</option>
+                    <option value="destination.html">Pokhara</option>
+                    <option value="destination.html">Chitwan</option>
+					<option value="destination.html">Langtang National Park</option>
+                    <option value="destination.html">Gosaikunda</option>
+                    <option value="destination.html">Annapurna Base Camp</option>
+                </select>
+		  
+		  </li>
+		  
+		  
+		  
+		  <li><a href="destination.html">Travel Package</a>
+		     <!--  <ol>
+			          <li><a href="#">3Days</a></li>
+                      <li><a href="#">5Days</a></li>
+                      <li><a href="#">A week</a></li>
+			  </ol> -->
+			 
+		  
+		  </li>
+          <li><a href="#travel-tips">Travel Tips</a></li>
+		  <!-- <li><a href="#climate">Climate</a></li> -->
+		  <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#about-us">About Us</a></li>
+		 
+        </ul>
+      </nav>
+	 </div>	
+		 
+	  
+	
+	  <div class="row">
+	   
+            <div class="col">
+              <img src="abc1.jpg"  style="width="450" height="200">
+              <p>Annapurna Base Camp</p>
+            </div>
+			<div class="hide">The Annapurna Base Camp Trek (ABC) is a breathtaking journey through a richly varied terrain and culture that includes charming Gurung villages, terraced farms, and a vast range of flora and animals.<br> The trek to Mt. Annapurna's base camp, which is located at a height of 4130m/13549ft, is among the most well-known hikes on the planet. The peak, which stands at 8091m in Nepal, is the tenth tallest mountain in the world. Additionally, Mt. Machhapuchhre (Fishtail), which the Nepalese adore for its singular beauty, is how we get to our goal. Additionally, because of the well planned schedule of the Annapurna Base Camp trekking package, it is a well-liked option among a variety of outdoor enthusiasts, from female lone travelers to hikers going to Nepal in groups.</div>
+            <div class="col">
+              <img src="abc2.jpg"  style="width="450" height="200">
+              <p>Langtang Trek</p>
+            </div>
+			<div class="hide">The first national park in the Himalayas was created in 1976 and is called Langtang. The park has an area of 1,710 km2 and is located in the districts of Nuwakot, Rasuwa, and Sindhupalchowk (660 sq mi). The boundary between Nepal and Tibet runs north and east of the park, barely 32 km from Kathmandu, the nation's capital.<br>Many ungulate species, including musk deer and Himalayan tahr, have summer habitat in Langtang's vast alpine meadows. The red panda, Himalayan black bear, snow leopard, wild dog, ghoral, serow, and more than 250 bird species that may be found in the park are also well-known for their numbers.</div>
+            <div class="col">
+              <img src="abc3.jpg" style="width="450" height="200">
+              <p>Machhapuchhre</p>
+            </div>
+			<div class="hide">An option for trekkers who are impacted by the growing number of motorable roads being built in the Annapurna Conservation Area is offered by the Machhapuchhre Model Trek, a special package. Because of the stunning views of Mount Machhapuchare that we saw along the way, the Machhapuchare Model was given that name. Similar to Mount Fishtail, this trail is undeveloped and allows you to fully enjoy the splendor of nature. <br>To enjoy the fantastic views of the snow-capped Himalayan range, including the well-known Mt. Annapurna and Mt. Machhapuchare (Fish Tail), mountain landscapes, natural hot water springs, hiking through rhododendron forest, ancient caves, waterfalls, discover various species of flora and fauna, and amazing viewpoints, trekkers have the option of extending the trek up to Mardi Himal Base Camp.</div>
+			<div class="col">
+              <img src="abc4.jpg" style="width="450" height="200">
+              <p>Namaste ABC</p>
+            </div>
+			<div class="hide">The Hindu goddess of food and nourishing is said to live in the Annapurna range, which bears her name. The name Annapurna, which is derived from the Sanskrit words for "food" and "full," is translated as "Everlasting food." The area has several streams that supply the lowlands of the Annapurna range with water for their pastures and agricultural areas.<br> The only 8,000-meter mountain to be scaled on the first two without bottled oxygen is Annapurna.</div>
+		
+      </div> 
+	  
+	  
+	  
+	  <div class="row">
+	   
+            <div class="col">
+              <img src="abc5.jpg"  style="width="450" height="200">
+              <p>Chitwan National Park</p>
+            </div>
+			<div class="hide">The Ramsar Site Beeshazari Tal is located in the buffer zone of the Chitwan National Park (CNP), which is a site of international significance. The CNP has been managing parks for almost three decades and has a wealth of expertise addressing issues between the park and the public.<br>In the Terai, a subtropical region in southern Nepal, there is a wealth of natural beauty. The park is home to 126 species of fish, 68 kinds of fish, 544 species of birds, 56 species of herpetofauna, and 68 species of mammals. The park is particularly well-known for the One Horned Rhinoceros, Royal Bengal Tiger, and Gharial Crocodile that it protects.</div>
+			
+            <div class="col">
+              <img src="abc6.jpg"  style="width="450" height="200">
+              <p>Pokhara</p>
+            </div>
+			<div class="hide">Pokhara is one of the most well-liked tourist sites and the second-most visited city in Nepal. It is renowned for both its serene ambiance and the stunning surroundings. On the Phewa Lake's beaches is where Pokhara is located. Three of the 10 tallest mountains in the world are visible from Pokhara (Dhaulagiri, Annapurna, Manasalu). <br>Due to its sharp top, the Machhapuchre (also known as the "Fishtail") has come to represent the city.<br>Pokhara has a wealth of sightseeing options as the starting point for hikers who complete the well-known Annapurna Circuit. Phewa Lake borders the town's Lakeside neighborhood, which is a bustling commercial district. Visitors may board a boat at the southern part of the city and go to the famed Barahi.</div>
+            <div class="col">
+              <img src="abc7.jpg" style="width="450" height="200">
+              <p>Gosaikunda</p>
+            </div>
+			<div class="hide">The purest holy lake is known by the name of Gosaikunda. It is located in Nepal's Rasuwa district and has a surface area of around 13.8 hectares (34 acres). Between Helambu, Langtang Valley, and Langtang National Park, it is located north of Kathmandu. <br>According to the measurement, Kathmandu city is 43 (kilometers) away. It progressively rises 4,380 meters above sea level. Due to a traditional belief linking the lake to Lord Shiva, the Hindu god of force and annihilation, this sacred lake is also well-known in Nepalese society. Since this holy lake is continually bestowing the populace with heavenly blessings.</div>
+			
+			<div class="col">
+              <img src="abc8.jpg" style="width="450" height="200">
+              <p>Kapuche Lake</p>
+            </div>
+			<div class="hide">One of the top newly developed trekking routes in Nepal is the Kapuche Lake Trek. The route is distinct due to its position and unspoiled natural surroundings, and it is also less traveled and congested than other paths. <br>Therefore, Kaphuche has a lot to offer if you're seeking for a trekking path that provides stunning scenery, a remote lifestyle, and a seldom-hiked track. To the northeast of Kaski is the Lowest Glacier Lake. The short hike starts in Pokhara and travels through a number of villages and hills. The hiking path was only recently found and made accessible to tourists, but because of its stunning natural surroundings and distinctive trekking experience, it has been steadily gaining popularity.</div>
+		
+      </div> 
+	  
+	  
+	    
+	  
+	
+  
+    <footer>
+      
+	  <center> 
+	       <address>
+	             <p>Copyright &copy 2023 DevrajTamang</p>
+	              Backpackers: a group project<br> 				  
+				  			
+					<a href="https://www.facebook.com/devrajt74" class="fa fa-facebook"></a>
+					<a href="https://www.instagram.com/devraj07tamang/" class="fa fa-instagram"></a>
+					<a href="tel:+819068311797" class="fa fa-whatsapp" ></a> </p>
+	       </address>
+    </center>
+    </footer>  
+  </body>
+</html>

@@ -1,0 +1,675 @@
+<!-- <html>
+  <head>
+    <title>Travel Destinations in Nepal</title>
+  </head>
+  <body>
+    <h1>Travel Destinations in Nepal</h1>
+    <ul>
+      <li>
+        <h2>Annapurna Circuit Trek</h2>
+        <img src="annapurna-circuit.jpg" alt="Annapurna Circuit Trek">
+        <p>The Annapurna Circuit Trek is a popular trek that takes you around the Annapurna mountain range in the Himalayas. It offers stunning views of the mountains and passes through various landscapes, including forests, villages, and high altitude plateaus. The trek can be completed in about 10-12 days.</p>
+      </li>
+      <li>
+        <h2>Everest Base Camp Trek</h2>
+        <img src="everest-base-camp.jpg" alt="Everest Base Camp Trek">
+        <p>The Everest Base Camp Trek is a classic trek that takes you to the base camp of Mount Everest, the highest mountain in the world. The trek passes through the Sagarmatha National Park and offers breathtaking views of the Himalayan peaks. The trek can be completed in about 10-12 days.</p>
+      </li>
+      <li>
+        <h2>Langtang Valley Trek</h2>
+        <img src="langtang-valley.jpg" alt="Langtang Valley Trek">
+        <p>The Langtang Valley Trek is a beautiful trek that takes you through the Langtang National Park and the Langtang Valley. The trek offers stunning views of the Langtang Lirung, the highest peak in the region, as well as the opportunity to visit the Langtang village, which was destroyed by an earthquake in 2015 and is being rebuilt by the local community. The trek can be completed in about 7-8 days.</p>
+      </li>
+    </ul>
+  </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NepalTravel</title>
+	<meta name="author" content="Devraj Tamang">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style>
+	        
+		ul {
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+		  
+		  position:fixed;
+		  top:0%;
+		  left:0%;
+		  width:100%; 
+		  list-style-type:none;    		  
+        }
+		ol{
+		   font-color:white-space;
+		}
+
+        li {
+          float: left;
+        }
+
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+		  text-decoration:none;
+        }
+
+        li a:hover {
+           background-color: #111;
+		   text-decoration:underline;
+        }
+			
+	   .logo {
+          position: absolute;
+          top: 0;
+          left: 10%;
+        }
+	
+	   .row {
+        display: flex;
+		<!-- background-image: url('nepal1.jpg');
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+		opacity: 0.8; -->
+        }
+
+       .col {
+         flex: 33%;
+         padding: 5px;
+       }
+	  <!--  table{
+	      background-size: 100%;
+	   }
+	   
+	   th, td ,tr{
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 40px;
+       } -->
+	   table {
+          width: 50%;
+          border-collapse: collapse;
+		   margin: 0 auto;
+      }
+      
+	  th, td,tr {
+          border: 1px solid black;
+          padding: 8px;
+          text-align: left;
+      }
+      th {
+          background-color: #d2d2d2;
+      }
+      tr:nth-child(even) {
+          background-color: #f2f2f2;
+      }
+	   
+	   
+	   input[type="submit"] {
+          background-color: blue;
+          border: none;
+          color: white;
+          font-size: 16px;
+          padding: 8px 16px;
+          border-radius: 4px;
+        }
+
+       input[type="submit"]:hover {
+          background-color: darkblue;
+        }
+		
+		label {
+        display: none;
+       }
+
+       input:checked + label {
+        display: block;
+       }
+	   
+	   .hide {
+        display: none;
+       }
+    
+      .myDIV:hover + .hide {
+        display: block;
+        color: red;
+      }
+	  fieldset, .nepalmap {
+         display: inline-block;
+       }
+	   
+	   .om:hover + .hide{
+	      opacity: 0.5;
+		  display: block;
+		  color:red;
+	   }
+	   
+		#muktinath, #pokhara, #chitwan, #langtang, #annapurna, #gosaikunda, #everest{
+		        font-size: 38px;
+				font-family: Arial, sans-serif;
+				color: #333;
+				background-color: rgba(0,0,0,0.2);
+				text-align: left;
+                line-height: 1.5;
+				letter-spacing: 2px;
+		}
+	   
+	    .fa {
+			  padding:10px;
+			  font-size:10px;
+			  width:10px;
+			  text-align:center;
+			  text-decoration:none;
+			  margin:5px 2px;
+			}
+			
+			.fa:hover{
+			  opacity: 0.7;
+			}
+		    
+			.fa-facebook {
+			  background: #3B5998;
+			  color: white;
+			}
+			
+			.fa-instagram {
+			  background: #992600;
+			  color: white;
+			}
+			
+			.fa-whatsapp {
+			  background: #009933;
+			  color: white;
+			}
+			
+			.dropdown {
+            position: relative;
+            display: inline-block;
+            }
+
+            .dropdown-content {
+             display: none;
+             position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+           }
+
+           .dropdown:hover .dropdown-content {
+           display: block;
+           }
+		
+	  
+
+
+	    
+	</style>
+	
+  </head>
+  <body>
+   
+    <br><br><br>
+  <div id="top"></div>
+	<a href="#bottom">Go to Bottom</a>
+    <header>
+     <div class="giflogo">
+	  <a href="https://www.animatedimages.org/cat-nepal-flag-839.htm"><img src="https://www.animatedimages.org/data/media/839/animated-nepal-flag-image-0007.gif" border="0" alt="animated-nepal-flag-image-0007" /></a>
+	  
+	   <!-- <div class="logo"> -->
+			<img src="logo1.png"  alt="Website travel logo" width="650" height="150" />
+       </div>
+    </header>  
+	
+	
+
+ <div class="menu"> 
+      <nav>
+        <ul>
+		   <li><a href="index.html">Home</a></li>
+		   
+		  <li><a href="#muktinath">Destinations</a>
+		  
+		          <select id="menu" name="menu" onchange="location = this.value;">  
+					
+				<!-- 	<option  value="kathmandu.html"><a href="#muktinath">Muktinath</a></option> -->
+				
+				    <option  value="#muktinath">Muktinath</option>
+                    <option value="#pokhara">Pokhara</option>
+                    <option value="#chitwan">Chitwan</option>
+					<option  value="#langtang">Langtang National Park</option>
+                    <option value="#gosaikunda">Gosaikunda</option>
+                    <option value="#annapurna">Annapurna Base Camp</option>
+					<option value="#everest">Mt. Everest Base Camp</option>
+                </select>
+		  
+		  </li>
+		  
+		  
+		  
+		  <li><a href="travelpackage.html">Travel Package</a>
+		     <!--  <ol>
+			          <li><a href="#">3Days</a></li>
+                      <li><a href="#">5Days</a></li>
+                      <li><a href="#">A week</a></li>
+			  </ol> -->
+			 
+		  
+		  </li>
+          <li><a href="#travel-tips">Travel Tips</a></li>
+		 <!--  <li><a href="#climate">Climate</a></li> -->
+		  <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#about-us">About Us</a></li>
+		 
+        </ul>
+      </nav>
+	 </div>	
+		 	
+			
+			
+			
+		<p id="muktinath">Muktinath via Gyu La</p>		
+    <table >
+           <tr>
+		       <th>Day</th>
+               <th>Itinerary</th>
+               <th>Distance|Time</th>
+			 
+           </tr>
+           <tr>
+               <td>Day 1</td>
+               <td>Kagbeni (2810m) → Chele (3050m) via Tangbe </td>
+			   <td>16 km | 6 hours</td> 
+           </tr>
+		   
+           <tr>
+               <td>Day 2</td>
+               <td>Chele (3050m) → Syangboche (3800m) / Ghiling (3570m) </td>
+			   <td>16/17 km | 7/8 hours</td>
+           </tr>
+		   
+		   <tr>
+               <td>Day 3</td>
+               <td>Syangboche (3800m) / Ghiling (3570m) → Dhakmar (3820 m) via Ghami </td>
+			   <td>18 km | 8/7 hours</td>
+           </tr>
+            
+			<tr>
+               <td>Day 4</td>
+               <td>Dhakmar (3820m) → Tsarang (3560m) via Ghar Gompa </td>
+			   <td>12 km | 6 hours</td>
+           </tr>
+		   
+		   <tr>
+               <td>Day 5</td>
+               <td>Tsarang (3560m) → Lo Manthang (3810m) explore monasteries & walled city </td>
+			   <td>13 km | 4 hours</td>
+           </tr>
+		   
+		    <tr>
+               <td>Day 6</td>
+               <td>Lo Manthang (3810m) → Chhoser (3900m)→ Lo Manthang (3810m) </td>
+			   <td>16 km | 6 hours</td>
+           </tr>
+		    <tr>
+               <td>Day 7</td>
+               <td>Lo Manthang (3810m) → Yara (3650m) via Dhi Chhusang  </td>
+			   <td>13 km | 4 hours</td>
+           </tr>
+		    <tr>
+               <td>Day 8</td>
+               <td>Chhusang (2980m) → Muktinath (3700m) via Gyu La </td>
+			   <td>16 km | 4 hours</td>
+           </tr>
+    </table>
+			
+			
+	<p id="pokhara">Pokhara</p>		
+    <table >
+           <tr>
+		       <th>Day</th>
+               <th>Itinerary</th>
+               <th>Time</th>
+			 
+           </tr>
+           <tr>
+               <td>Day 1</td>
+               <td>Arrival in Kathmandu; Visit to Swayambhunath </td>
+			   <td>2 hours</td> 
+           </tr>
+		   
+           <tr>
+               <td>Day 2</td>
+               <td>Kathmandu Durbar Square; Bhaktapur for dinner </td>
+			   <td>2.5 hours</td>
+           </tr>
+		   
+		   <tr>
+               <td>Day 3</td>
+               <td>Pokhara by bus, explore Lakeside </td>
+			   <td>30 minutes</td>
+           </tr>
+            
+			<tr>
+               <td>Day 4</td>
+               <td>Mahendra Cave Gufa, Chamero and Gupteshwor Mahadev </td>
+			   <td>5-6 hours</td>
+           </tr>
+		   <tr>
+               <td>Day 5</td>
+               <td>	Shanti Stupa </td>
+			   <td> 3 hours</td>
+           </tr>
+		   
+		   <tr>
+               <td>Day 6</td>
+               <td>	Begnas Lake </td>
+			   <td> 3 hours</td>
+           </tr>
+		   <tr>
+               <td>Day 7</td>
+               <td>	Fly back to Kathmandu </td>
+			   <td> 30 minutes</td>
+           </tr>
+		   
+		    
+           </tr>
+    </table>
+
+    <p id="chitwan">Chitwan</p>		
+    <table >
+           <tr>
+		       <th>Day</th>
+               <th>Itinerary</th>
+               <th>Time</th>
+			 
+           </tr>
+           <tr>
+               <td>Day 1</td>
+               <td colspan="2">Welcome to Kathmandu  </td>
+			    
+           </tr>
+		   
+           <tr>
+               <td>Day 2</td>
+               <td>Sightseeing-Patan, Pashupatinath and The Monkey Temple </td>
+			   <td>4 hours</td>
+           </tr>
+		   
+		   <tr>
+               <td>Day 3</td>
+               <td>Fly from Kathmandu to Pokhara, and Sightseeing</td>
+			   <td>5 hours (35 minutes flight) </td>
+           </tr>
+            
+			<tr>
+               <td>Day 4</td>
+               <td>Fly From Pokhara to Chitwan  </td>
+			   <td>30 minutes</td>
+           </tr>
+		   
+		   <tr>
+               <td>Day 5</td>
+               <td>	Jungle Safari and Tharu dance program</td>
+			   <td> 30 minutes</td>
+           </tr>
+		   
+		   <tr>
+               <td>Day 6</td>
+               <td>	Fly from Chitwan to Kathmandu and Departure</td>
+			   <td> 40 minutes</td>
+           </tr>
+		   
+		    
+           </tr>
+    </table>	
+		
+		
+    <p id="langtang">Langtang National Park</p>		
+    <table >
+           <tr>
+		       <th>Day</th>
+               <th>Itinerary</th>
+               <th>Time</th>
+			 
+           </tr>
+           <tr>
+               <td>Day 1</td>
+               <td colspan="2">Drive Kathmandu to Syabrubesi and trek to Rimche </td>
+			    
+           </tr>
+		   
+           <tr>
+               <td>Day 2</td>
+               <td>Trek from Rimche to Langtang village </td>
+			   <td>3 hours</td>
+           </tr>
+		   
+		   <tr>
+               <td>Day 3</td>
+               <td>Trek from Langtang village to Kyanjin Gumba</td>
+			   <td>2.5 hours </td>
+           </tr>
+            
+			<tr>
+               <td>Day 4</td>
+               <td>Hike to Kyanjin Ri - Trek back to Kyanjin Gumba - Trek back to Rimche  </td>
+			   <td>5 hours</td>
+           </tr>
+		   
+		   <tr>
+               <td>Day 5</td>
+               <td>Trek back to Syabrubesi- Drive to Kathmadu</td>
+			   <td> 7 hours</td>
+           </tr>
+		  
+          
+    </table>
+	
+	
+	 <p id="annapurna">Annapurna Base Camp</p>		
+    <table >
+           <tr>
+		       <th>Day</th>
+               <th>Itinerary</th>
+               <th>Time</th>
+			 
+           </tr>
+           <tr>
+               <td>Day 1</td>
+               <td colspan="2">Fly from Kathmandu to Pokhara; Drive to Sewai and Trek to Chhomrong </td>
+			    <td>7 hours</td>
+           </tr>
+		   
+           <tr>
+               <td>Day 2</td>
+               <td>Chhomrong to Himalaya Hotel </td>
+			   <td>3 hours</td>
+           </tr>
+		   
+		   <tr>
+               <td>Day 3</td>
+               <td>Trek from Langtang village to Kyanjin Gumba</td>
+			   <td>5 hours </td>
+           </tr>
+           
+			<tr>
+               <td>Day 4</td>
+               <td>Trek from Langtang village to Kyanjin Gumba</td>
+			   <td>5 hours </td>
+           </tr>
+			<tr>
+               <td>Day 5</td>
+               <td> Himalaya Hotel to ABC to Sinuwa  </td>
+			   <td>3 hours</td>
+           </tr>
+		   
+		   <tr>
+               <td>Day 6</td>
+               <td>Sinuwa to Nayapul via Sewai and Drive to Pokhara</td>
+			   <td> 7 hours</td>
+           </tr>
+		  
+          
+    </table>
+	
+	 <p id="gosaikunda">Gosaikunda</p>		
+    <table >
+           <tr>
+		       <th>Day</th>
+               <th>Itinerary</th>
+               <th>Time</th>
+			 
+           </tr>
+           <tr>
+               <td>Day 1</td>
+               <td>Drive to Dhunche and Trek to Chhomrong </td>
+			    <td>5/6 hours</td>
+           </tr>
+		   
+           <tr>
+               <td>Day 2</td>
+               <td>Trek to Chandanwari </td>
+			   <td>7 hours</td>
+           </tr>
+		   
+		   <tr>
+               <td>Day 3</td>
+               <td>Trek to Gosaikunda</td>
+			   <td>5 hours </td>
+           </tr>
+            
+			<tr>
+               <td>Day 4</td>
+               <td>Trek Back to Dhunche  </td>
+			   <td>8 hours</td>
+           </tr>
+		   
+		   <tr>
+               <td>Day 5</td>
+               <td>Return to Kathmandu </td>
+			   <td> 6 hours</td>
+           </tr>
+		  
+          
+    </table>
+	
+	
+	 <p id="everest">Mt. Everest via Namchebajar and Gokyo Lake</p>		
+    <table >
+           <tr>
+		       <th>Day</th>
+               <th>Itinerary</th>
+               <th>Time</th>
+			 
+           </tr>
+           <tr>
+               <td>Day 1</td>
+               <td>Arrival in Kathmandu and sightseeing</td>
+			   <td>4 hours</td>
+			   
+           </tr>
+		   
+           <tr>
+               <td>Day 2</td>
+               <td>Fly from Kathmandu to Lukla and trek to Phakding  </td>
+			   <td>4 hours trek</td>
+           </tr>
+		   
+		   <tr>
+               <td>Day 3</td>
+               <td>Trek from Phakding to Namchebajar</td>
+			   <td>6 hours </td>
+           </tr>
+            
+			<tr>
+               <td>Day 4</td>
+               <td>Rest at Namchebajar </td>
+			   <td>One day</td>
+           </tr>
+		   
+		   <tr>
+               <td>Day 5</td>
+               <td>Trek from Tengboche to Dingboche </td>
+			   <td> 5 hours</td>
+           </tr>
+		   <tr>
+               <td>Day 6</td>
+               <td>Acclimation day in Dingboche</td>
+			   <td>One day</td>
+           </tr>
+		    <tr>
+               <td>Day 7</td>
+               <td>Trek from Dingboche to Lobuche </td>
+			   <td> 5 hours</td>
+           </tr>
+		   
+		     <tr>
+               <td>Day 8</td>
+               <td>Trek from Lobuche to Gorak Shep, to EBC and back to Gork Shep </td>
+			   <td> 8 hours</td>
+           </tr>
+		   
+		   <tr>
+               <td>Day 9</td>
+               <td>Trek from Thangna to Gokyo Lake </td>
+			   <td> 4 hours</td>
+           </tr>
+		   <tr>
+               <td>Day 10</td>
+               <td>Climb to Gokyo ri and Back to Dole </td>
+			   <td> 8 hours</td>
+           </tr>
+		   <tr>
+               <td>Day 11</td>
+               <td>Trek from Dole to Namchebajar to Lukla</td>
+			   <td> 8 hours</td>
+           </tr>
+		   <tr>
+               <td>Day 12</td>
+               <td>Lukla to Kathmandu by flight </td>
+			   <td> 1 hours</td>
+           </tr> 
+          
+    </table>
+		
+
+  
+    <footer>
+      
+	  <center> 
+	       <address>
+	             <p>Copyright &copy 2022 DevrajTamang</p>
+	              Backpackers: a group project<br> 				  
+				  			
+					<a href="https://www.facebook.com/devrajt74" class="fa fa-facebook"></a>
+					<a href="https://www.instagram.com/devraj07tamang/" class="fa fa-instagram"></a>
+					<a href="tel:+819068311797" class="fa fa-whatsapp" ></a> </p>
+	       </address>
+    </center>
+	
+	
+    </footer> 
+     
+	 <a href="#top">Go to Top</a>
+    <div id="bottom"></div>
+	
+	
+
+	
+	
+	
+  </body>
+</html>

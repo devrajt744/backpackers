@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NepalTravel</title>
+	<meta name="author" content="Devraj Tamang">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style>
+
+		#para {
+		  font-size: 20px;
+		  color: black;
+		  text-align: justify;
+		  background-color: gray;
+		  padding: 10px;
+		  font-family: Arial, sans-serif;
+		  letter-spacing: 2px;
+		}
+
+		ul {
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+		  
+		  position:fixed;
+		  top:0%;
+		  left:0%;
+		  width:100%; 
+		  list-style-type:none;    		  
+        }
+		ol{
+		   font-color:white-space;
+		}
+
+        li {
+          float: left;
+        }
+
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+		  text-decoration:none;
+        }
+
+        li a:hover {
+           background-color: #111;
+		   text-decoration:underline;
+        }
+			
+	   .logo {
+          position: absolute;
+          top: 0;
+          left: 10%;
+        }
+	
+	   .row {
+        display: flex;
+		<!-- background-image: url('nepal1.jpg');
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+		opacity: 0.8; -->
+        }
+
+       .col {
+         flex: 33%;
+         padding: 5px;
+       }
+	  <!--  table{
+	      background-size: 100%;
+	   }
+	   
+	   th, td ,tr{
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 40px;
+       } -->
+	   table {
+          width: 50%;
+          border-collapse: collapse;
+		 background-image: url('nepal1.jpg');
+      }
+      
+	  th, td,tr {
+          border: 1px solid black;
+          padding: 8px;
+          text-align: left;
+      }
+      th {
+          background-color: #d2d2d2;
+      }
+      tr:nth-child(even) {
+          background-color: #f2f2f2;
+      }
+	   
+	   
+	   input[type="submit"] {
+          background-color: blue;
+          border: none;
+          color: white;
+          font-size: 16px;
+          padding: 8px 16px;
+          border-radius: 4px;
+        }
+
+       input[type="submit"]:hover {
+          background-color: darkblue;
+        }
+		
+		label {
+        display: none;
+       }
+
+       input:checked + label {
+        display: block;
+       }
+	   
+	   .hide {
+        display: none;
+       }
+    
+      .myDIV:hover + .hide {
+        display: block;
+        color: red;
+      }
+	  fieldset, .nepalmap {
+         display: inline-block;
+       }
+	   
+	   .om:hover + .hide{
+	      opacity: 0.5;
+		  display: block;
+		  color:red;
+	   }
+	   
+	    .fa {
+			  padding:10px;
+			  font-size:10px;
+			  width:10px;
+			  text-align:center;
+			  text-decoration:none;
+			  margin:5px 2px;
+			}
+			
+			.fa:hover{
+			  opacity: 0.7;
+			}
+		    
+			.fa-facebook {
+			  background: #3B5998;
+			  color: white;
+			}
+			
+			.fa-instagram {
+			  background: #992600;
+			  color: white;
+			}
+			
+			.fa-whatsapp {
+			  background: #009933;
+			  color: white;
+			}
+			
+			.dropdown {
+            position: relative;
+            display: inline-block;
+            }
+
+            .dropdown-content {
+             display: none;
+             position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+           }
+
+           .dropdown:hover .dropdown-content {
+           display: block;
+           }
+		
+	  
+
+
+	    
+	</style>
+	
+  </head>
+  <body>
+   
+    <br><br><br>
+  <div id="top"></div>
+	<a href="#bottom">Go to Bottom</a>
+    <header>
+     <div class="giflogo">
+	  <a href="https://www.animatedimages.org/cat-nepal-flag-839.htm"><img src="https://www.animatedimages.org/data/media/839/animated-nepal-flag-image-0007.gif" border="0" alt="animated-nepal-flag-image-0007" /></a>
+	  
+	   <!-- <div class="logo"> -->
+			<img src="logo1.png"  alt="Website travel logo" width="650" height="150" />
+       </div>
+    </header>  
+	
+	
+
+ <div class="menu"> 
+      <nav>
+        <ul>
+		   <li><a href="index.html">Home</a></li>
+		   
+		  <li><a href="destination.html">Destinations</a>
+		  
+		          <select id="menu" name="menu" onchange="location = this.value;">  
+					
+					 <option  value="#muktinath">Muktinath</option>
+                    <option value="#pokhara">Pokhara</option>
+                    <option value="#chitwan">Chitwan</option>
+					<option  value="#langtang">Langtang National Park</option>
+                    <option value="#gosaikunda">Gosaikunda</option>
+                    <option value="#annapurna">Annapurna Base Camp</option>
+                </select>
+		  
+		  </li>
+		  
+		  
+		  
+		  <li><a href="travelpackage.html">Travel Package</a>
+		     <!--  <ol>
+			          <li><a href="#">3Days</a></li>
+                      <li><a href="#">5Days</a></li>
+                      <li><a href="#">A week</a></li>
+			  </ol> -->
+			 
+		  
+		  </li>
+          <li><a href="#travel-tips">Travel Tips</a></li>
+		  <li><a href="#climate">Climate</a></li>
+		  <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+		 
+        </ul>
+      </nav>
+	 </div>	
+		 
+	  	
+	
+			
+		
+		<p id="para">
+		  Welcome to Backpackers.com, your ultimate destination for planning and experiencing the best of Nepal's adventurous and cultural travel.
+
+We are a team of travel enthusiasts and experts, who have explored every nook and cranny of Nepal, from the highest peaks to the deepest valleys. We understand the needs and desires of backpackers and strive to provide you with the most comprehensive and up-to-date information on everything Nepal has to offer.
+
+Our website is designed to help you plan and book your perfect Nepal adventure, whether it's trekking to the base camp of Mount Everest, exploring the rich culture and history of Kathmandu, or rafting down the wild rapids of the Trishuli River. We offer a wide range of travel options, from budget-friendly to luxury, to suit all types of travelers.
+
+<br><br>We understand that traveling to a new place can be overwhelming, which is why we have created a user-friendly website with detailed information on everything from visa requirements to recommended gear. Our travel guides and blog articles are written by experienced travelers and locals, providing you with insider tips and recommendations to make your trip as smooth and enjoyable as possible.
+
+We also understand that each traveler's need is unique, which is why we work with a network of local travel agents and guides who can help you customize your trip to suit your individual needs and preferences.
+
+<br><br>At Backpackers.com, we believe that traveling is not just about visiting new places, but about creating lasting memories and connecting with the world around us. We are committed to providing you with the best possible travel experience in Nepal and hope to inspire you to explore this incredible country for yourself.
+
+Thank you for choosing Backpackers.com, and we look forward to helping you plan your next adventure in Nepal.
+		
+		
+		</p>
+
+		
+		
+		
+		
+		
+	
+	
+  
+    <footer>
+      
+	  <center> 
+	       <address>
+	             <p>Copyright &copy 2022 DevrajTamang</p>
+	              Backpackers: a group project<br> 				  
+				  			
+					<a href="https://www.facebook.com/devrajt74" class="fa fa-facebook"></a>
+					<a href="https://www.instagram.com/devraj07tamang/" class="fa fa-instagram"></a>
+					<a href="tel:+819068311797" class="fa fa-whatsapp" ></a> </p>
+	       </address>
+    </center>
+	
+	
+    </footer> 
+     
+	 <a href="#top">Go to Top</a>
+    <div id="bottom"></div>
+	
+	
+	
+	
+
+
+
+	
+	
+
+	
+	
+	
+  </body>
+</html>
