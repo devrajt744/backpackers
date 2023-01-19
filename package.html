@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NepalTravel</title>
+	<meta name="author" content="Devraj Tamang">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style>
+	        
+		ul {
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+		  
+		  position:fixed;
+		  top:0%;
+		  left:0%;
+		  width:100%; 
+		  list-style-type:none;    		  
+        }
+		ol{
+		   font-color:white-space;
+		}
+
+        li {
+          float: left;
+        }
+
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+		  text-decoration:none;
+        }
+
+        li a:hover {
+           background-color: #111;
+		   text-decoration:underline;
+        }
+			
+	   .logo {
+          position: absolute;
+          top: 0;
+          left: 10%;
+        }
+	
+	   .row {
+        display: flex;
+		<!-- background-image: url('nepal1.jpg');
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+		opacity: 0.8; -->
+        }
+
+       .col {
+         flex: 33%;
+         padding: 5px;
+       }
+	  <!--  table{
+	      background-size: 100%;
+	   }
+	   
+	   th, td ,tr{
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 40px;
+       } -->
+	   table {
+          width: 50%;
+          border-collapse: collapse;
+		 background-image: url('nepal1.jpg');
+      }
+      
+	  th, td,tr {
+          border: 1px solid black;
+          padding: 8px;
+          text-align: left;
+      }
+      th {
+          background-color: #d2d2d2;
+      }
+      tr:nth-child(even) {
+          background-color: #f2f2f2;
+      }
+	   
+	   
+	   input[type="submit"] {
+          background-color: blue;
+          border: none;
+          color: white;
+          font-size: 16px;
+          padding: 8px 16px;
+          border-radius: 4px;
+        }
+
+       input[type="submit"]:hover {
+          background-color: darkblue;
+        }
+		
+		label {
+        display: none;
+       }
+
+       input:checked + label {
+        display: block;
+       }
+	   
+	   .hide {
+        display: none;
+       }
+    
+      .myDIV:hover + .hide {
+        display: block;
+        color: red;
+      }
+	  fieldset, .nepalmap {
+         display: inline-block;
+       }
+	   
+	   .om:hover + .hide{
+	      opacity: 0.5;
+		  display: block;
+		  color:red;
+	   }
+	   
+	    .fa {
+			  padding:10px;
+			  font-size:10px;
+			  width:10px;
+			  text-align:center;
+			  text-decoration:none;
+			  margin:5px 2px;
+			}
+			
+			.fa:hover{
+			  opacity: 0.7;
+			}
+		    
+			.fa-facebook {
+			  background: #3B5998;
+			  color: white;
+			}
+			
+			.fa-instagram {
+			  background: #992600;
+			  color: white;
+			}
+			
+			.fa-whatsapp {
+			  background: #009933;
+			  color: white;
+			}
+			
+			.dropdown {
+            position: relative;
+            display: inline-block;
+            }
+
+            .dropdown-content {
+             display: none;
+             position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+           }
+
+           .dropdown:hover .dropdown-content {
+           display: block;
+           }
+		   
+		   .fa, .logo {
+			  animation: logo-animation 3s ease-in-out infinite;
+			  border-radius: 40%;
+			}
+
+			@keyframes logo-animation {
+			  0% {
+				transform: rotate(0deg);
+			  }
+			  100% {
+				transform: rotate(360deg);
+			  }
+			}
+	  
+
+
+	    
+	</style>
+	
+  </head>
+  <body>
+   
+    <br><br><br>
+  <div id="top"></div>
+	<a href="#bottom">Go to Bottom</a>
+    <header>
+     <div class="giflogo">
+	  <a href="https://www.animatedimages.org/cat-nepal-flag-839.htm"><img src="https://www.animatedimages.org/data/media/839/animated-nepal-flag-image-0007.gif" border="0" alt="animated-nepal-flag-image-0007" /></a>
+	  
+	   <!-- <div class="logo"> -->
+			<img src="logo1.png"  alt="Website travel logo" width="650" height="150" />
+       </div>
+    </header>  
+	
+	
+
+ <div class="menu"> 
+      <nav>
+        <ul>
+		   <li><a href="index.html">Home</a></li>
+		   
+		  <li><a href="destination.html">Destinations</a>
+		  
+		          <select id="menu" name="menu" onchange="location = this.value;">  
+					
+					 <option  value="#muktinath">Muktinath</option>
+                    <option value="#pokhara">Pokhara</option>
+                    <option value="#chitwan">Chitwan</option>
+					<option  value="#langtang">Langtang National Park</option>
+                    <option value="#gosaikunda">Gosaikunda</option>
+                    <option value="#annapurna">Annapurna Base Camp</option>
+                </select>
+		  
+		  </li>
+		  
+		  
+		  
+		  <li><a href="travelpackage.html">Travel Package</a>
+		     <!--  <ol>
+			          <li><a href="#">3Days</a></li>
+                      <li><a href="#">5Days</a></li>
+                      <li><a href="#">A week</a></li>
+			  </ol> -->
+			 
+		  
+		  </li>
+          <li><a href="#travel-tips">Travel Tips</a></li>
+		  <!-- <li><a href="#climate">Climate</a></li> -->
+		  <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#about-us">About Us</a></li>
+		 
+        </ul>
+      </nav>
+	 </div>	
+		 
+	  	
+			
+			
+    <table >
+           <tr>
+		       <th>Day</th>
+               <th>itinerary</th>
+               <th>Distance|Time</th>
+			 
+           </tr>
+           <tr>
+               <td>Day 1</td>
+               <td>Kagbeni (2810m) → Chele (3050m) via Tangbe </td>
+			   <td>16 km | 6 hours</td> 
+           </tr>
+		   
+           <tr>
+               <td>Day 2</td>
+               <td>Chele (3050m) → Syangboche (3800m) / Ghiling (3570m) </td>
+			   <td>16/17 km | 7/8 hours</td>
+           </tr>
+		   
+		   <tr>
+               <td>Day 3</td>
+               <td>Syangboche (3800m) / Ghiling (3570m) → Dhakmar (3820 m) via Ghami </td>
+			   <td>18 km | 8/7 hours</td>
+           </tr>
+            
+			<tr>
+               <td>Day 4</td>
+               <td>Dhakmar (3820m) → Tsarang (3560m) via Ghar Gompa </td>
+			   <td>12 km | 6 hours</td>
+           </tr>
+		   
+		   <tr>
+               <td>Day 5</td>
+               <td>Tsarang (3560m) → Lo Manthang (3810m) explore monasteries & walled city </td>
+			   <td>13 km | 4 hours</td>
+           </tr>
+		   
+		    <tr>
+               <td>Day 6</td>
+               <td>Lo Manthang (3810m) → Chhoser (3900m)→ Lo Manthang (3810m) </td>
+			   <td>16 km | 6 hours</td>
+           </tr>
+		    <tr>
+               <td>Day 7</td>
+               <td>Lo Manthang (3810m) → Yara (3650m) via Dhi </td>
+			   <td>13 km | 4 hours</td>
+           </tr>
+		    <tr>
+               <td>Day 8</td>
+               <td>Chhusang (2980m) → Muktinath (3700m) via Gyu La </td>
+			   <td>16 km | 4 hours</td>
+           </tr>
+    </table>
+			
+		
+		
+
+		
+		
+		
+		
+		
+	
+	
+  
+    <footer>
+      
+	  <center> 
+	       <address>
+	             <p>Copyright &copy 2023 DevrajTamang</p>
+	              Backpackers: a group project<br> 				  
+				  			
+					<a href="https://www.facebook.com/devrajt74" class="fa fa-facebook"></a>
+					<a href="https://www.instagram.com/devraj07tamang/" class="fa fa-instagram"></a>
+					<a href="tel:+819068311797" class="fa fa-whatsapp" ></a> </p>
+	       </address>
+    </center>
+	
+	
+    </footer> 
+     
+	 <a href="#top">Go to Top</a>
+    <div id="bottom"></div>
+	
+	
+	
+	
+
+
+
+	
+	
+
+	
+	
+	
+  </body>
+</html>
