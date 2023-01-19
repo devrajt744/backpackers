@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NepalTravel</title>
+	<meta name="author" content="Devraj Tamang">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style>
+	        
+		ul {
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+		  
+		  position:fixed;
+		  top:0%;
+		  left:0%;
+		  width:100%; 
+		  list-style-type:none;    		  
+        }
+		ol{
+		   font-color:white-space;
+		}
+
+        li {
+          float: left;
+        }
+
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+		  text-decoration:none;
+        }
+
+        li a:hover {
+           background-color: #111;
+		   text-decoration:underline;
+        }
+			
+	   .logo {
+          position: absolute;
+          top: 0;
+          left: 10%;
+        }
+	
+	   .row {
+        display: flex;
+		<!-- background-image: url('nepal1.jpg');
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+		opacity: 0.8; -->
+        }
+
+       .col {
+         flex: 33%;
+         padding: 5px;
+       }
+	  <!--  table{
+	      background-size: 100%;
+	   }
+	   
+	   th, td ,tr{
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 40px;
+       } -->
+	   table {
+          width: 50%;
+          border-collapse: collapse;
+          margin: 0 auto;
+       }
+      
+	  th, td,tr {
+          border: 1px solid black;
+          padding: 12px;
+		  margin: 5px;
+          text-align: left;
+      }
+      th {
+          background-color: #d2d2d2;
+      }
+    <!--   tr:nth-child(even) {
+          background-color: #f2f2f2;
+      } -->
+	   
+	   
+	   input[type="submit"] {
+          background-color: blue;
+          border: none;
+          color: white;
+          font-size: 16px;
+          padding: 8px 16px;
+          border-radius: 4px;
+        }
+
+       input[type="submit"]:hover {
+          background-color: darkblue;
+        }
+		
+		label {
+        display: none;
+       }
+
+       input:checked + label {
+        display: block;
+       }
+	   
+	   .hide {
+        display: none;
+       }
+    
+      .myDIV:hover + .hide {
+        display: block;
+        color: red;
+      }
+	  fieldset, .nepalmap {
+         display: inline-block;
+       }
+	   
+	   .om:hover + .hide{
+	      opacity: 0.5;
+		  display: block;
+		  color:red;
+	   }
+	   
+	    .fa {
+			  padding:10px;
+			  font-size:10px;
+			  width:10px;
+			  text-align:center;
+			  text-decoration:none;
+			  margin:5px 2px;
+			}
+			
+			.fa:hover{
+			  opacity: 0.7;
+			}
+		    
+			.fa-facebook {
+			  background: #3B5998;
+			  color: white;
+			}
+			
+			.fa-instagram {
+			  background: #992600;
+			  color: white;
+			}
+			
+			.fa-whatsapp {
+			  background: #009933;
+			  color: white;
+			}
+			
+			.dropdown {
+            position: relative;
+            display: inline-block;
+            }
+
+            .dropdown-content {
+             display: none;
+             position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+           }
+
+           .dropdown:hover .dropdown-content {
+           display: block;
+           }
+		   
+		   .fa, .logo {
+			  animation: logo-animation 3s ease-in-out infinite;
+			  border-radius: 40%;
+			}
+
+			@keyframes logo-animation {
+			  0% {
+				transform: rotate(0deg);
+			  }
+			  100% {
+				transform: rotate(360deg);
+			  }
+			}
+	  
+           #tips ol{
+			  list-style-type: none; 
+			  padding: 0; 
+			  margin: 0; 
+			}
+
+			#tips li {
+			  display: flex; 
+			  align-items: center; 
+			  justify-content: center; 
+			}
+
+			#tips h2 {
+			  font-size: 2em; 
+			  font-weight: bold; 
+			  text-align: left; 
+			  margin-bottom: 10px; 
+			  background-color: #CDC9C8;
+			  width: 50%;
+			}
+
+			<!-- #tips img{
+			  width: 250px;
+			  height: auto; 
+			  margin-right: 10px;
+			} -->
+
+			#tips p {
+			  font-size: 1.2em; 
+			  text-align: justify; 
+			  margin: 10px 0; 
+			   background-color: #F1E8E8;
+			}
+
+	    
+	</style>
+	
+  </head>
+  <body>
+   
+    <br><br><br>
+  <div id="top"></div>
+	<a href="#bottom">Go to Bottom</a>
+    <header>
+     <div class="giflogo">
+	  <a href="https://www.animatedimages.org/cat-nepal-flag-839.htm"><img src="https://www.animatedimages.org/data/media/839/animated-nepal-flag-image-0007.gif" border="0" alt="animated-nepal-flag-image-0007" /></a>
+	  
+	   <!-- <div class="logo"> -->
+			<img src="logo1.png"  alt="Website travel logo" width="650" height="150" />
+       </div>
+    </header>  
+	
+	
+
+ <div class="menu"> 
+      <nav>
+        <ul>
+		   <li><a href="index.html">Home</a></li>
+		   
+		  <li><a href="destination.html">Destinations</a>
+		  
+		          <select id="menu" name="menu" onchange="location = this.value;">  
+					
+					 <option  value="destination.html">Muktinath</option>
+                    <option value="destination.html">Pokhara</option>
+                    <option value="destination.html">Chitwan</option>
+					<option  value="destination.html">Langtang National Park</option>
+                    <option value="destination.html">Gosaikunda</option>
+                    <option value="destination.html">Annapurna Base Camp</option>
+                </select>
+		  
+		  </li>
+		  
+		  
+		  
+		  <li><a href="travelpackage.html">Travel Package</a>
+		     <!--  <ol>
+			          <li><a href="#">3Days</a></li>
+                      <li><a href="#">5Days</a></li>
+                      <li><a href="#">A week</a></li>
+			  </ol> -->
+			 
+		  
+		  </li>
+          <li><a href="travel-tips.html">Travel Tips</a></li>
+		  <!-- <li><a href="#climate">Climate</a></li> -->
+		  <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+		 
+        </ul>
+      </nav>
+	 </div>	
+	 
+	 
+		 
+	  	
+			
+
+			
+		
+		
+
+	<div id="tips">	
+<!-- 		<ol>
+		  <li>
+			<h2>Avoid solo trek</h2>
+			<p>Making sure you are constantly accompanied by other visitors, or at the the least by a guide if you are going on a trek, is one of the most crucial travel safety advice for Nepal. This is because there have been several instances of visitors going missing while walking alone in recent years. For those of you who are visiting Nepal alone and are seeking for a trekking partner, there are several websites and platforms where you may locate other trekkers preparing for treks in Nepal. You should take this advice on traveling to Nepal very seriously.</p>
+		  </li>
+		</ol>
+		
+		<ol>
+		  <li>
+			<h2>Have trekking gears</h2>
+			<p> There are many stores in Thamel that sell and rent equipment for hiking. If you want to go on hikes regularly, you can acquire your own equipment. If you don't go on hikes regularly, renting hiking equipment will save you money. A rental store will be simple to locate, but a rental warehouse will be challenging. Ask your tour operator or guide for suggestions on where to rent equipment; they may point you in the right direction.</p>
+		  </li>
+		</ol>
+		
+		
+		<ol>
+		  <li>
+			<h2>Caryy universal adaptor</h2>
+			<p>Being left without their electronic equipment because they lack the proper type of socket is one of the worst things that can happen to a traveler. Therefore, one of the best travel advice for Nepal that you can receive is to always travel with a universal adaptor. You may easily purchase an adaptor at any electrical store in your city, or even at a Duty-Free at the airport, if Nepal utilizes 220V outlets. You'll save time by not having to search the city for an electronics store..</p>
+		  </li>
+		</ol>
+		
+		<ol>
+		  <li>
+			<h2>Recognize money scammers</h2>
+			<p>When taking a taxi to get about Nepal, be sure to always request that the driver charge you per the meter and to do so at the beginning of the journey. It is common practice for taxi drivers in Nepal to overcharge tourists by two or three times the going fare. As a result, drive carefully and only on meters. Having said that, if you go after 10 PM, the taxis may occasionally charge you twice what the meter indicates. In Nepal, even local commuters are used to paying this.</p>
+		  </li>
+		</ol>
+		
+		<ol>
+		  <li>
+			<h2>Carry passport photos</h2>
+			<p>If you want to travel to Nepal, you should be aware that you may either apply for a visa in advance of your trip or once you arrive. Both methods are perfectly acceptable, but if you intend to obtain a visa upon arrival, be sure to include a passport photo. If not, you will have to wait a very long time to get your picture taken at the airport. Therefore, have a camera with you at all times; not only will it save you a lot of time, but you never know when it could be useful later on your vacation.</p>
+		  </li>
+		</ol>
+		
+		<ol>
+		  <li>
+			<h2>Go to clubs early</h2>
+			<p> One of the less amusing truths about Nepal is that the majority of the country's nightlife finishes at or about 10 PM. If you were hoping to party until morning, you'll be let down. If you want to go out, depart early and get to the bars about 7 o'clock so you have time to enjoy the evening before returning to the hotel.</p>
+		  </li>
+		</ol>
+		 -->
+		
+		
+		<table >
+           <tr>
+		       <td>Avoid solo trek</th>
+               <td><p>Making sure you are constantly accompanied by other visitors, or at the the least by a guide if you are going on a trek, is one of the most crucial travel safety advice for Nepal. This is because there have been several instances of visitors going missing while walking alone in recent years. For those of you who are visiting Nepal alone and are seeking for a trekking partner, there are several websites and platforms where you may locate other trekkers preparing for treks in Nepal. You should take this advice on traveling to Nepal very seriously.</p>
+               </td>
+           </tr>
+		   
+		   <tr>
+		       <td>Have trekking gears</th>
+               <td><p> There are many stores in Thamel that sell and rent equipment for hiking. If you want to go on hikes regularly, you can acquire your own equipment. If you don't go on hikes regularly, renting hiking equipment will save you money. A rental store will be simple to locate, but a rental warehouse will be challenging. Ask your tour operator or guide for suggestions on where to rent equipment; they may point you in the right direction.</p>
+               </td>
+           </tr>
+		   
+		   
+           <tr>
+		       <td>Caryy universal adaptor</td>
+			   <td><p>Being left without their electronic equipment because they lack the proper type of socket is one of the worst things that can happen to a traveler. Therefore, one of the best travel advice for Nepal that you can receive is to always travel with a universal adaptor. You may easily purchase an adaptor at any electrical store in your city, or even at a Duty-Free at the airport, if Nepal utilizes 220V outlets. You'll save time by not having to search the city for an electronics store..</p>
+               </td>		   
+		   </tr>
+		   
+		  <tr>
+		       <td> Recognize money scammers</td>
+               <td><p>When taking a taxi to get about Nepal, be sure to always request that the driver charge you per the meter and to do so at the beginning of the journey. It is common practice for taxi drivers in Nepal to overcharge tourists by two or three times the going fare. As a result, drive carefully and only on meters. Having said that, if you go after 10 PM, the taxis may occasionally charge you twice what the meter indicates. In Nepal, even local commuters are used to paying this.</p>
+</td>		   
+		   </tr>
+		   <tr>
+		       <td>Carry passport photos</td>
+               <td><p>If you want to travel to Nepal, you should be aware that you may either apply for a visa in advance of your trip or once you arrive. Both methods are perfectly acceptable, but if you intend to obtain a visa upon arrival, be sure to include a passport photo. If not, you will have to wait a very long time to get your picture taken at the airport. Therefore, have a camera with you at all times; not only will it save you a lot of time, but you never know when it could be useful later on your vacation.</p>
+</td>		   
+		   </tr>
+		   
+		   <tr>
+		       <td> Go to clubs early</td>
+               <td><p> One of the less amusing truths about Nepal is that the majority of the country's nightlife finishes at or about 10 PM. If you were hoping to party until morning, you'll be let down. If you want to go out, depart early and get to the bars about 7 o'clock so you have time to enjoy the evening before returning to the hotel.</p>
+</td>		   
+		   </tr>
+		   
+		   
+		 
+    </table>
+		
+		
+		
+		
+		
+		
+	</div>	
+		
+		
+	
+	
+  
+    <footer>
+      
+	  <center> 
+	       <address>
+	             <p>Copyright &copy 2023 DevrajTamang</p>
+	              Backpackers: a group project<br> 				  
+				  			
+					<a href="https://www.facebook.com/devrajt74" class="fa fa-facebook"></a>
+					<a href="https://www.instagram.com/devraj07tamang/" class="fa fa-instagram"></a>
+					<a href="tel:+819068311797" class="fa fa-whatsapp" ></a> </p>
+	       </address>
+    </center>
+	
+	
+    </footer> 
+     
+	 <a href="#top">Go to Top</a>
+    <div id="bottom"></div>
+	
+	
+	
+	
+
+
+
+	
+	
+
+	
+	
+	
+  </body>
+</html>
