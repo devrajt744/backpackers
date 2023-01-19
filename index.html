@@ -71,6 +71,7 @@
         padding-bottom: 20px;
         padding-left: 30px;
         padding-right: 40px;
+		vertical-align: top;
        }
 	   
 	   
@@ -187,6 +188,20 @@
 		  width: 40%;
 		}
 		
+		.fa {
+		  animation: logo-animation 3s ease-in-out infinite;
+		   border-radius: 40%;
+		}
+
+		@keyframes logo-animation {
+		  0% {
+			transform: rotate(0deg);
+		  }
+		  100% {
+			transform: rotate(360deg);
+		  }
+		}
+		
          
 
 	    
@@ -240,7 +255,7 @@
 			 
 		  
 		  </li>
-          <li><a href="#travel-tips">Travel Tips</a></li>
+          <li><a href="travel-tips.html">Travel Tips</a></li>
 		 <!--  <li><a href="#climate">Climate</a></li> -->
 		  <li><a href="gallery.html">Gallery</a></li>
           <li><a href="aboutus.html">About Us</a></li>
@@ -255,7 +270,7 @@
                 <th><p style="text-align: justify;  font-family: Trebuchet MS;"  >Nepal is a place of exquisite and varied natural scenery, as well as distinctive communities. Bengal tigers, one-horned rhinoceroses, Asiatic elephants, red pandas, snow leopards, and Tibetan wolves live in the breathtaking Himalayas, tropical rainforests, and plains of the Terai. Nepal is well-known for its safaris, rafting, mountaineering, and trekking. An ethnic mosaic with delectable cuisine, distinctive cultural customs, and vibrant celebrations. Nepal, which is mostly Hindu and Buddhist, is a tolerant melting pot of many cultures and religious beliefs, with over 100 recognized castes and ethnic groups, speaking as many languages, and where spirituality and everyday life are entwined. Only the Kathmandu Valley has 7 UNESCO World Heritage Sites. <br>
 				       <img src="abc2.jpg"  style="width:100%" height="250">
 				     </p></td>
-                <th><p style="text-align: justify;  font-family: Trebuchet MS;">There are many different types of accommodations available, but we only utilize and suggest award-winning hotels, most of which fall into the five-star level. It is highly advised that you book every piece of lodging as long in advance as you can, especially if you want to visit during their festival season.
+                <th><p style="text-align: justify;  font-family: Trebuchet MS; ">There are many different types of accommodations available, but we only utilize and suggest award-winning hotels, most of which fall into the five-star level. It is highly advised that you book every piece of lodging as long in advance as you can, especially if you want to visit during their festival season.
 
                         A great family-friendly vacation spot, Nepal offers a variety of kid-friendly activities including custom wildlife safaris, rafting, nature walks, and cultural tours. <br> 
 				 <iframe src="https://www.daraz.com" width="400" height="90"><p> </iframe> <br><br><br>	
@@ -288,8 +303,8 @@
 		
 	<div class="nepalmap">
 		   
-		       <iframe src="https://maps.google.com/maps?q=your+location&output=embed" width="800" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-			   <h2 style="box-shadow: 0 0 10px #000; ">Use google maps to look for a location<h2>
+		       <iframe src="https://maps.google.com/maps?q=your+location&output=embed" width="800" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+			   <h2 style="box-shadow: 0 0 10px #000; text-align:center;">Use google maps to look for a location<h2>
 		   
     </div>	
 		
@@ -297,19 +312,21 @@
 		
 		
     <fieldset id="myFieldset">
-	  <legend> <b> Sign up and stay connected! </b> </legend>
+	  <legend> <b> Book now and stay connected! </b> </legend>
 	
 	
 	  <form action="/action_page.php">
-	    <p> Email*</br> <input type="text" placeholder="Type Email Address" name="email" size="50" required /> </p>
-	    <p> Full name*</br> <input type="text" placeholder="Type organization name" name="org" size="50" required /> </p>
-	    <!-- <p> Suggestion</br> <input type="text" placeholder="Suggest me.." name="suggest"/> </p> -->
-        <p>How did you know about us? </br><textarea id="query" name="query"  rows="5" cols="70" placeholder="Optional,, 150 words max." maxlength="150" autofocus></textarea><br>	</p>  
-	     <p>Upload your Passport size photo*</p>
-         <input type="file" id="photo" name="photo" required><br>
-		<p> Today's date* </br>
+	    <p> Email*</br> <input type="text" placeholder="Type Email Address" name="email" size="50" autofocus required /> </p>
+	    <p> Full name*</br> <input type="text" placeholder="Type your name" name="org" size="50" autofocus required /> </p>
+		<p> Place you want to visit*</br> <input type="text" placeholder="Itinerary description" name="org" size="50" autofocus required /> </p>
+        <p>Upload your Ticket photo*</p>
+        <input type="file" id="photo" name="photo" autofocus required><br>
+		<p>Upload your Visa photo*</p>
+        <input type="file" id="photo1" name="photo1" autofocus required><br>
+		<p> Desired travel starting date* </br>
 		<input type="date" name="date" autofocus required /> </p>
-	    <input type="submit" value="submit" autofocus> 
+		<p>How did you know about us?(optional) </br><textarea id="query" name="query"  rows="5" cols="70" placeholder="Optional,, 150 words max." maxlength="150" autofocus></textarea><br>	</p> 
+	    <input type="submit" value="Book now" autofocus> 
 	  </form>
 	</fieldset>
 		
