@@ -34,10 +34,11 @@
           text-align: center;
           padding: 14px 16px;
 		  text-decoration:none;
-        }	
-	li a:active {
-            background-color: #ff0000;
-	    text-decoration:underline;
+        }
+
+        li a:hover {
+           background-color: #111;
+		   text-decoration:underline;
         }
 			
 	   .logo {
@@ -203,10 +204,17 @@
 		  }
 		}
 		
-         @media only screen and (max-width: 600px) {
-             body {
-           }
-          }
+		#blinking-image {
+		  animation: blink 1s linear infinite;
+		}
+
+		@keyframes blink {
+		  0% { opacity: 1; }
+		  50% { opacity: 0; }
+		  100% { opacity: 1; }
+		}
+
+         
 
 	    
 	</style>
@@ -224,6 +232,7 @@
 	  
 	   <!-- <div class="logo"> -->
 			<img src="logo1.png"  alt="Website travel logo" width="650" height="150" />
+			<img src="offer.png" id="blinking-image" width="400" height="150">
        </div>
     </header>  
 	
