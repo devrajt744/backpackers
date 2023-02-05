@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NepalTravel</title>
+	<meta name="author" content="Devraj Tamang">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+	        
+		ul {
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+		  
+		  position:fixed;
+		  top:0%;
+		  left:0%;
+		  width:100%; 
+		  list-style-type:none;    		  
+        }
+		ol{
+		   font-color:white-space;
+		}
+
+        li {
+          float: left;
+        }
+
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+		  text-decoration:none;
+        }
+
+        li a:hover {
+           background-color: #111;
+		   text-decoration:underline;
+        }
+			
+	   .logo {
+          position: absolute;
+          top: 0;
+          left: 10%;
+        }  
+	  .nepalmap {
+         display: inline-block;
+       }
+	   
+	 
+	   
+	    .fa {
+			  padding:10px;
+			  font-size:10px;
+			  width:10px;
+			  text-align:center;
+			  text-decoration:none;
+			  margin:5px 2px;
+			}
+			
+			.fa:hover{
+			  opacity: 0.7;
+			}
+		    
+			.fa-facebook {
+			  background: #3B5998;
+			  color: white;
+			}
+			
+			.fa-instagram {
+			  background: #992600;
+			  color: white;
+			}
+			
+			.fa-whatsapp {
+			  background: #009933;
+			  color: white;
+			}
+			 h2{
+		   font-size: 28px;
+		   font-family: Arial, sans-serif;
+		   color: #333;
+		   background-color: rgba(0,0,0,0.2);
+		   text-align: center;
+           line-height: 1.5;
+		   letter-spacing: 2px;
+		   border-radius:15px;
+		} 
+		
+		.fa {
+		  animation: logo-animation 3s ease-in-out infinite;
+		   border-radius: 40%;
+		}
+
+		@keyframes logo-animation {
+		  0% {
+			transform: rotate(0deg);
+		  }
+		  100% {
+			transform: rotate(360deg);
+		  }
+		}
+		
+		#blinking-image {
+		  animation: blink 1s linear infinite;
+		}
+
+		@keyframes blink {
+		  0% { opacity: 1; }
+		  50% { opacity: 0; }
+		  100% { opacity: 1; }
+		}    
+		
+		.grid-container {
+		  display: grid;
+		  grid-template-columns: repeat(3, 1fr);
+		  grid-gap: 10px;
+		  padding: 10px;
+		}
+
+		.grid-item {
+		  background-color: lightgray;
+		  border: 1px solid black;
+		  text-align: center;
+		  padding: 20px;
+		  position: relative;
+		}
+
+		.grid-item img {
+		  width: 100%;
+		  height: 100%;
+		}
+
+		.grid-item p {
+		  position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  margin: 0;
+		  background-color: rgba(255, 255, 255, 0.5);
+		  padding: 10px;
+		}
+
+		.grid-item:hover img {
+		  transform: scale(1.1);
+		}
+		.item-text {
+		  position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  margin: 0;
+		  background-color: rgba(255, 255, 255, 0.5);
+		  padding: 10px;
+		  font-family: "fantasy", sans-serif;
+		}
+
+		.hover-text {
+		  display: none;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  background-color: rgba(255, 255, 255, 0.8);
+		  padding: 20px;
+		  text-align: justify;
+		   text-shadow: 1px 1px 2px gray;
+		   
+		}
+
+		.grid-item:hover .hover-text {
+		  display: block;
+		}
+
+
+	</style>
+	
+  </head>
+  <body>
+   
+   
+  <div id="top"></div>
+   <br><br><br>
+	<a href="#bottom">Go to Bottom</a>
+    <header>
+     <div class="giflogo">
+	  <a href="https://www.animatedimages.org/cat-nepal-flag-839.htm"><img src="https://www.animatedimages.org/data/media/839/animated-nepal-flag-image-0007.gif" border="0" alt="animated-nepal-flag-image-0007" /></a>
+			<img src="logo1.png"  alt="Website travel logo" width="650" height="150" />
+       </div>
+    </header>  
+	
+	
+
+ <div class="menu"> 
+      <nav>
+        <ul>
+		   <li><a href="index.html">Home</a></li>
+		   
+		  <li><a href="destination.html">Destinations</a>
+		  
+		          <select id="menu" name="menu" onchange="location = this.value;">  
+					
+					<option value="destination.html">Muktinath</option>
+                    <option value="destination.html">Pokhara</option>
+                    <option value="destination.html">Chitwan</option>
+					<option value="destination.html">Langtang National Park</option>
+                    <option value="destination.html">Gosaikunda</option>
+                    <option value="destination.html">Annapurna Base Camp</option>
+                </select>
+		  
+		  </li>
+		  
+		  
+		  
+		  <li><a href="travelpackage.html">Travel Package</a></li>
+          <li><a href="travel-tips.html">Travel Tips</a></li>
+		  <li><a href="gallery.html">Gallery</a></li>
+		  <li><a href="other.html">Other facility</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+		 
+        </ul>
+      </nav>
+	 </div>	
+		 
+</div>
+
+         <h2> Other facility </h2>
+			
+		<div class="grid-container">
+		  <div class="grid-item">
+			<img src="hotel.jpg" alt="Hotel Image">
+			 <p class="item-text">Pre-booked hotel</p>
+             <p class="hover-text">A hotel reservation booked beforehand as part of a trip package. In addition to the hotel stay, the package may also include travel, activities, and flights. The cost of the vacation is often reduced for the passenger by reserving the hotel as part of a package.</p>
+		  </div>
+		  <div class="grid-item">
+			<img src="guide.jpg" alt="Guide Image">
+			 <p class="item-text">Professional guides</p>
+             <p class="hover-text">We offer professional tourist guides who provides a variety of explanations and guidelines to help people plan their journeys. Destination guides, travel itineraries, city guides, and background information on culture and history are a few examples of popular guide kinds.</p>
+		  </div>
+		  <div class="grid-item">
+			<img src="porter.jpg" alt="Portor Image">
+			 <p class="item-text">Availability of Porter</p>
+             <p class="hover-text">We know how important it is to travel comfortably and without worry, which is why many of our destinations provide porter services. The easy and trouble-free travel of our visitors is our first priority, and our porters are qualified experts who are committed to doing just that.</p>
+		  </div>
+		</div>
+  
+    <footer>
+      
+	  <center> 
+	       <address>
+	             <p>Copyright &copy 2023 DevrajTamang</p>
+	              Backpackers: a group project<br> 				  
+				  			
+					<a href="https://www.facebook.com/devrajt74" class="fa fa-facebook"></a>
+					<a href="https://www.instagram.com/devraj07tamang/" class="fa fa-instagram"></a>
+					<a href="tel:+819068311797" class="fa fa-whatsapp" ></a> </p>
+	       </address>
+    </center>
+	
+	
+    </footer> 
+     
+	 <a href="#top">Go to Top</a>
+    <div id="bottom"></div>
+	
+  </body>
+</html>
